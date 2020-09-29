@@ -1,0 +1,28 @@
+interface G0/1
+  ip add 30.0.0.1 255.255.255.0
+  no shutdown
+  exi
+
+ interface G0/2
+  ip add 20.0.0.1 255.255.255.0
+  no shutdown
+  exi
+
+ interface G0/3
+  ip add 40.0.0.1 255.255.255.0
+  no shutdown
+  exi
+
+ router eigrp 1
+    network  30.0.0.0 0.0.0.255
+    no auto
+
+ router eigrp 1
+    network  40.0.0.0 0.0.0.255
+    no auto
+
+ router eigrp 1
+    network  20.0.0.0 0.0.0.255
+    no auto
+
+ 

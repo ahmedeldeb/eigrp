@@ -1,0 +1,21 @@
+configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+R3(config)#router eigrp 1
+R3(config-router)#    network  60.0.0.0 0.0.0.255
+R3(config-router)#    no auto
+R3(config-router)#
+R3(config-router)# router eigrp 1
+R3(config-router)#    network  70.0.0.0 0.0.0.255
+R3(config-router)#    no auto
+R3(config-router)#
+R3(config-router)# router eigrp 1
+R3(config-router)#    network  80.0.0.0 0.0.0.255
+R3(config-router)#    no auto
+R3(config-router)#
+R3(config-router)# router eigrp 1
+R3(config-router)#    network  30.0.0.0 0.0.0.255
+R3(config-router)#    no auto
+R3(config-router)#
+R3(config-router)#
+R3(config-router)#end
+R3#
